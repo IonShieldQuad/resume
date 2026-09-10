@@ -1,221 +1,531 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Лилия Гринина — Резюме</title>
-<link rel="icon" href="data:,">
-<style>
-  :root {
-    --accent: #4f46e5;
-    --accent-soft: #eef2ff;
-    --ink: #1f2430;
-    --muted: #5b6270;
-    --line: #e4e7ec;
-    --bg: #f5f6fa;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: var(--ink);
-    background: var(--bg);
-    line-height: 1.6;
-  }
-  .page { max-width: 880px; margin: 0 auto; padding: 32px 20px 64px; }
-  header.hero {
-    background: linear-gradient(135deg, #1e1b4b 0%, var(--accent) 100%);
-    color: #fff;
-    border-radius: 16px;
-    padding: 36px 36px 32px;
-    margin-bottom: 28px;
-  }
-  header.hero h1 { margin: 0 0 6px; font-size: 30px; letter-spacing: .3px; }
-  header.hero .role { font-size: 17px; opacity: .95; margin-bottom: 18px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .chip {
-    background: rgba(255,255,255,.14);
-    border: 1px solid rgba(255,255,255,.25);
-    padding: 4px 12px;
-    border-radius: 999px;
-    font-size: 13.5px;
-  }
-  .chip a { color: #fff; text-decoration: none; }
-  .chip a:hover { text-decoration: underline; }
-  .grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
-  section {
-    background: #fff;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 22px 26px;
-  }
-  h2 {
-    margin: 0 0 14px;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: var(--accent);
-    border-bottom: 2px solid var(--accent-soft);
-    padding-bottom: 8px;
-  }
-  h3 { margin: 18px 0 4px; font-size: 16px; }
-  p { margin: 6px 0; }
-  ul { margin: 8px 0; padding-left: 20px; }
-  li { margin: 4px 0; }
-  .meta { color: var(--muted); font-size: 14px; }
-  .sub { color: var(--muted); margin: 2px 0 10px; }
-  .proj { margin-bottom: 18px; }
-  .proj:last-child { margin-bottom: 0; }
-  .proj-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; }
-  .proj-title { font-weight: 700; font-size: 16px; }
-  .tag {
-    display: inline-block;
-    background: var(--accent-soft);
-    color: var(--accent);
-    border-radius: 6px;
-    padding: 1px 8px;
-    font-size: 12px;
-    font-weight: 600;
-  }
-  .link { color: var(--accent); text-decoration: none; word-break: break-all; }
-  .link:hover { text-decoration: underline; }
-  .kv { margin: 4px 0; }
-  .kv b { color: var(--ink); }
-  .highlight {
-    background: var(--accent-soft);
-    border-left: 3px solid var(--accent);
-    padding: 10px 14px;
-    border-radius: 0 8px 8px 0;
-    margin: 10px 0;
-    color: #333;
-  }
-  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 24px; }
-  @media (min-width: 760px) {
-    .grid { grid-template-columns: 1fr 1fr; align-items: start; }
-    .span2 { grid-column: 1 / -1; }
-  }
-</style>
+<title>Lily Grinina — Backend Developer · AI Practitioner</title>
+<meta name="description" content="Lily Grinina — Backend Developer, Junior Frontend, AI Practitioner. Open to remote backend and AI-agent engineering work.">
+<meta name="theme-color" content="#05070d">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://ionshieldquad.github.io/resume/">
+<meta property="og:title" content="Lily Grinina — Backend Developer · AI Practitioner">
+<meta property="og:description" content="Backend Developer, Junior Frontend, AI Practitioner. Building real paid projects. Remote only. Open to work.">
+<meta property="og:image" content="https://ionshieldquad.github.io/resume/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lily Grinina — Backend Developer · AI Practitioner">
+<meta name="twitter:description" content="Backend Developer, Junior Frontend, AI Practitioner. Remote only. Open to work.">
+<meta name="twitter:image" content="https://ionshieldquad.github.io/resume/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<div class="page">
-  <header class="hero">
-    <h1>Лилия Гринина</h1>
-    <div class="role">Backend-разработчик &middot; Джун Frontend &middot; AI Practitioner</div>
-    <div class="chips">
-      <span class="chip">Статус: в поиске</span>
-      <span class="chip">Только удалённо</span>
-      <span class="chip">Готова начать: прямо сейчас</span>
-      <span class="chip">Полный день (40+ часов)</span>
-      <span class="chip">Город: Тамбов</span>
-    </div>
-    <div class="chips" style="margin-top:12px">
-      <span class="chip">Telegram: <a href="https://t.me/MsBinaryLily">@MsBinaryLily</a></span>
-      <span class="chip">Email: <a href="mailto:ms.binary.lily@gmail.com">ms.binary.lily@gmail.com</a></span>
-      <span class="chip">GitHub: <a href="https://github.com/IonShieldQuad">IonShieldQuad</a></span>
-    </div>
-  </header>
 
-  <div class="grid">
-    <section>
-      <h2>Профиль</h2>
-      <p>Backend-разработчик с опытом веб-разработки, автоматизации и работы с ИИ-инструментами. Разрабатываю приложения и связки на базе ИИ-агентов, владею классическим программированием.</p>
-      <p>Очень ценю знания и компетентность. Всегда стараюсь знать больше, быть и делать работу лучше — считаю это ценным само по себе, даже без дополнительной награды.</p>
-      <p class="sub">Хотелось бы продолжить своё развитие и выйти на сотрудничество — заниматься разработкой реальных оплачиваемых проектов.</p>
+<header class="topbar">
+  <a class="brand" href="#top">
+     <span class="hex hex-sm"><span>LG</span></span>
+    <span class="brand-name">LILY<span class="dot">.</span>GRININA</span>
+  </a>
+  <nav class="controls" aria-label="Page controls">
+    <span class="sys-state" aria-hidden="true"><span class="blink">●</span> <span data-tr="sys">SYS.STATUS: OPEN TO WORK</span></span>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+    </div>
+    <button class="icon-btn" id="print-btn" type="button" aria-label="Print or save as PDF" title="Print / Save as PDF">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ ENGLISH ============ -->
+  <div class="lang active" data-lang="en">
+    <section class="hero panel">
+      <div class="hero-id">
+        <div class="hex hex-lg"><span>L</span></div>
+        <div>
+          <h1 class="glow-name">Lily Grinina</h1>
+          <p class="role">Backend Developer <span class="sep">/</span> Junior Frontend <span class="sep">/</span> AI Practitioner</p>
+        </div>
+      </div>
+      <div class="hero-side">
+        <ul class="chips">
+          <li><span class="chip ok">STATUS · OPEN TO WORK</span></li>
+          <li><span class="chip">REMOTE ONLY</span></li>
+          <li><span class="chip">FULL-TIME · 40+ h/wk</span></li>
+          <li><span class="chip">READY NOW</span></li>
+          <li><span class="chip dim">BASE · TAMBOV, RU</span></li>
+        </ul>
+        <div class="contact">
+          <a class="cbtn" href="https://t.me/MsBinaryLily" title="Telegram">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M21.9 4.4 18.7 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-.9.5l.3-4.6L18.3 6c.4-.3-.1-.5-.6-.2L7.4 12.6l-4.5-1.4c-1-.3-1-1 .2-1.5L20.6 3c.8-.3 1.5.2 1.3 1.4Z"/></svg>
+            @MsBinaryLily
+          </a>
+          <a class="cbtn" href="mailto:ms.binary.lily@gmail.com" title="Email">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m4 7 8 6 8-6"/></svg>
+            ms.binary.lily@gmail.com
+          </a>
+          <a class="cbtn" href="https://github.com/IonShieldQuad" title="GitHub">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            github.com/IonShieldQuad
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Технический стек</h2>
-      <p class="kv"><b>Языки:</b> Python, JavaScript, Java, SQL, PHP + Lua</p>
-      <p class="kv"><b>Направления:</b> ML/AI, Backend, Frontend, Автоматизация</p>
-      <p class="kv"><b>Фреймворки:</b> n8n, FastAPI, Uvicorn, SQLite, NocoDB, MySQL, Keras, Docker</p>
-      <p class="kv"><b>Языки (человеческие):</b> Русский (родной), Английский (C1&ndash;C2, свободно)</p>
-      <p class="kv" style="margin-top:12px"><b>Зоны роста:</b> создание ИИ-агентов и автоматизаций на их основе (например через n8n) и разработка приложений с помощью ИИ-агентов. Поскольку текущий ИИ всё ещё совершает много ошибок, способность разобраться в коде помогает.</p>
+    <section class="panel reveal">
+      <h2 class="sec-h"><span class="kick">01</span> Profile</h2>
+      <div class="cols">
+        <p>Backend developer with hands-on experience in web development, automation and AI tooling. I build applications and agent-driven pipelines, and I am comfortable working directly in code when AI needs supervision.</p>
+        <p>I value knowledge and competence deeply and always aim to know more and make work better — I consider this valuable for its own sake, even without a reward attached.</p>
+      </div>
+      <div class="highlight">
+        <p><span class="hud-tag">MISSION</span> Looking to keep growing and start collaborating on real, paid production projects.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Образование</h2>
-      <p class="kv"><b>Тамбовский Государственный Технический Университет</b><br>Информатика и Вычислительная Техника, магистр (09.03.01 / 09.04.01)</p>
-      <p class="sub" style="margin-top:10px">За годы учёбы разработала много учебных и личных проектов:</p>
-      <ul>
+    <section class="panel reveal">
+      <h2 class="sec-h"><span class="kick">02</span> Stack &amp; Tools</h2>
+      <div class="stack-grid">
+        <div class="sblock">
+          <h3>Languages</h3>
+          <div class="pills"><span>Python</span><span>JavaScript</span><span>Java</span><span>SQL</span><span>PHP</span><span>+ Lua</span></div>
+        </div>
+        <div class="sblock">
+          <h3>Domains</h3>
+          <div class="pills"><span>ML/AI</span><span>Backend</span><span>Frontend</span><span>Automation</span></div>
+        </div>
+        <div class="sblock">
+          <h3>Frameworks &amp; Platforms</h3>
+          <div class="pills"><span>n8n</span><span>FastAPI</span><span>Uvicorn</span><span>SQLite</span><span>NocoDB</span><span>MySQL</span><span>Keras</span><span>Docker</span></div>
+        </div>
+        <div class="sblock">
+          <h3>Human Languages</h3>
+          <p class="kv">Russian <span class="mono">· native</span></p>
+          <p class="kv">English <span class="mono">· C1–C2 fluent</span></p>
+        </div>
+      </div>
+      <div class="sblock grow">
+        <h3>AI Agentic Tools</h3>
+        <div class="pills"><span>Kun</span><span>OpenCode</span><span>Codex</span><span>Orca</span><span>Hermes</span><span>Claude</span><span>ChatGPT</span><span>DeepSeek</span></div>
+      </div>
+      <div class="sblock grow">
+        <h3>Growth Zones</h3>
+        <p>Two directions I&rsquo;m most interested in: <span class="mono">building AI agents / agent-driven automation</span> (e.g. via n8n) and <span class="mono">developing applications together with AI agents</span>. Since current AI still makes plenty of mistakes, being able to dig into the code is a real advantage.</p>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <h2 class="sec-h"><span class="kick">03</span> Education</h2>
+      <div class="edu">
+         <div class="hex hex-md"><span>Edu</span></div>
+        <div>
+          <h3>Tambov State Technical University</h3>
+          <p class="kv mono dim">Computer Science &amp; Computer Engineering — Master&rsquo;s (09.03.01 / 09.04.01)</p>
+          <p class="sub">Across my studies I built a wide range of coursework and personal projects:</p>
+        </div>
+      </div>
+      <ul class="grid-list">
+        <li>Websites</li>
+        <li>Android applications</li>
+        <li>A neural network written from scratch in JS</li>
+        <li>A compiler / translator</li>
+        <li>Software for industrial controllers and relays</li>
+        <li>Video game mods and addons</li>
+        <li>A working CPU architecture, built up from NAND gates</li>
+      </ul>
+    </section>
+
+    <section class="panel reveal">
+      <h2 class="sec-h"><span class="kick">04</span> Projects</h2>
+
+      <article class="proj">
+        <header class="proj-head">
+          <div>
+            <h3>Horizon</h3>
+            <div class="proj-tags">
+              <span class="tag pet">PET · FOR SELF</span>
+               <span class="tag owner">SOLE DEVELOPER</span>
+              <span class="tag alpha">ALPHA</span>
+            </div>
+          </div>
+          <a class="gh-link mono" href="https://github.com/IonShieldQuad/horizon-chamber">//horizon-chamber</a>
+        </header>
+        <div class="proj-body">
+          <div class="sblock"><h3>Stack</h3><div class="pills"><span>Python</span><span>FastAPI</span><span>Uvicorn</span><span>Canvas</span><span>SQLite</span></div></div>
+          <p>A productivity app I build for myself. I noticed I get distracted and work slowly — often because of a negative emotional backdrop and burnout. The app pairs a kanban board, a news feed, statistics and an emotion tracker. Two key features: an AI assistant that watches my behaviour and acts as a &ldquo;coach&rdquo; and support, plus a dynamic background and music to keep me motivated and focused. Still alpha, but the core functionality works.</p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <header class="proj-head">
+          <div>
+            <h3>Rain Maker</h3>
+            <div class="proj-tags">
+              <span class="tag pet">PET · FOR SELF</span>
+              <span class="tag owner">SOLE DEVELOPER</span>
+            </div>
+          </div>
+          <a class="gh-link mono" href="https://github.com/IonShieldQuad/rain-maker">//rain-maker</a>
+        </header>
+        <div class="proj-body">
+          <div class="sblock"><h3>Stack</h3><div class="pills"><span>Python</span><span>PySide6 / Qt</span><span>NumPy</span><span>PyInstaller</span></div></div>
+          <p>A procedural rain-noise generator for Windows: nine spectral rain layers plus droplets with per-band faders, a goal-pursuit auto-drift animation and presets. Ships as a portable single-file exe.</p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <header class="proj-head">
+          <div>
+            <h3>Telegram Parser / Aggregator</h3>
+            <div class="proj-tags">
+              <span class="tag owner">SOLE DEVELOPER</span>
+            </div>
+          </div>
+          <span class="gh-link mono">PRIVATE · DETAILS ON REQUEST</span>
+        </header>
+        <div class="proj-body">
+          <div class="sblock"><h3>Stack</h3><div class="pills"><span>Python</span></div></div>
+          <p>An AI-assisted multi-platform lead discovery and response-drafting system: aggregates target sources, surfaces promising leads and helps draft contextual replies. Closed-source — details available on request.</p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <header class="proj-head">
+          <div>
+            <h3>Evasion Learning</h3>
+            <div class="proj-tags">
+              <span class="tag edu-t">EDUCATIONAL</span>
+               <span class="tag owner">SOLE DEVELOPER</span>
+            </div>
+          </div>
+          <a class="gh-link mono" href="https://github.com/IonShieldQuad/Evasion-learning">//Evasion-learning</a>
+        </header>
+        <div class="proj-body">
+          <div class="sblock"><h3>Stack</h3><div class="pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+          <p>A study project to understand how machine learning actually works — implemented purely on the front end. A neural network drives a ball that dodges falling blocks. I managed to build a working neural network from scratch in JS, with no libraries. It visibly demonstrates learning (neuro-genetic algorithm) and running behaviour.</p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <header class="proj-head">
+          <div>
+            <h3>Lily&rsquo;s Innovations</h3>
+            <div class="proj-tags">
+              <span class="tag pet">PET · FOR SELF</span>
+               <span class="tag owner">SOLE DEVELOPER</span>
+              <span class="tag live">300+ USERS</span>
+            </div>
+          </div>
+          <a class="gh-link mono" href="https://github.com/IonShieldQuad/lilys-innovations">//lilys-innovations</a>
+        </header>
+        <div class="proj-body">
+          <div class="sblock"><h3>Stack</h3><div class="pills"><span>Lua</span><span>Hyperspace</span></div></div>
+          <p>An addon for the game FTL: Multiverse that I wrote entirely on my own — 13 scripts and more than 10,000 lines of code. The project is popular and has 300+ users.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel reveal">
+      <h2 class="sec-h"><span class="kick">05</span> Interview Log</h2>
+
+      <details class="qa" open>
+        <summary>How do you use AI in your workflow?</summary>
+        <div class="qa-body">
+          <p>I work across several agentic coding tools — <span class="mono">Kun</span>, <span class="mono">OpenCode</span>, <span class="mono">Codex</span> and <span class="mono">Orca</span> — for planning, implementation and review. My primary tool, Kun, is tuned for DeepSeek, which gives a high cache hit and a low cost per token. Whatever the tool, my workflow stays the same:</p>
+          <ol class="steps">
+            <li><span class="mono">01</span> Write the specification.</li>
+            <li><span class="mono">02</span> Analyse the project.</li>
+            <li><span class="mono">03</span> Build an implementation plan (with a pre-mortem), refine it, discuss missed details.</li>
+            <li><span class="mono">04</span> Execute each step of the plan.</li>
+            <li><span class="mono">05</span> Test and verify the work (manually).</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>A hard problem you solved?</summary>
+        <div class="qa-body">
+          <p>I wrote an optimisation algorithm that fetched data over an API. To avoid calling the API repeatedly, results were cached in a hash table — but the native way of comparing two objects was broken and always returned <span class="mono">false</span>, so caching silently never worked. I found it by attaching a profiler and wrote my own hashing / comparison function for those objects.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Clarifying questions you would ask?</summary>
+        <div class="qa-body">
+          <p>About the project itself, the languages and stack, the concrete specification, what is in my responsibility and what is not, and the deadline. Then I would draft an implementation plan with intermediate milestones / checkpoints.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>What does &ldquo;done well&rdquo; mean to you?</summary>
+        <div class="qa-body">
+          <p>Code that works, is tested, is well optimised (speed / memory) and is clearly understandable to other team members.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>How do you handle failure?</summary>
+        <div class="qa-body">
+          <p>During my studies I ran into health problems and realised I could not carry a whole project by myself. I wrote up why, and scaled the goal down — I delivered a smaller part instead of the full project.</p>
+        </div>
+      </details>
+    </section>
+
+    <footer class="foot mono">
+      <span>LILY GRININA · RESUME</span>
+      <span>// ionshieldquad.github.io/resume</span>
+      <span>HOSTED ON GITHUB PAGES</span>
+    </footer>
+  </div>
+
+  <!-- ============ РУССКИЙ ============ -->
+  <div class="lang" data-lang="ru">
+    <section class="hero panel">
+      <div class="hero-id">
+        <div class="hex hex-lg"><span>Л</span></div>
+        <div>
+          <h1 class="glow-name">Лилия Гринина</h1>
+          <p class="role">Backend-разработчик <span class="sep">/</span> Джун Frontend <span class="sep">/</span> AI Practitioner</p>
+        </div>
+      </div>
+      <div class="hero-side">
+        <ul class="chips">
+          <li><span class="chip ok">СТАТУС · В ПОИСКЕ</span></li>
+          <li><span class="chip">ТОЛЬКО УДАЛЁННО</span></li>
+          <li><span class="chip">ПОЛНЫЙ ДЕНЬ · 40+ ч/нед</span></li>
+          <li><span class="chip">ГОТОВА НАЧАТЬ СЕЙЧАС</span></li>
+          <li><span class="chip dim">БАЗА · ТАМБОВ</span></li>
+        </ul>
+        <div class="contact">
+          <a class="cbtn" href="https://t.me/MsBinaryLily" title="Telegram">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M21.9 4.4 18.7 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-.9.5l.3-4.6L18.3 6c.4-.3-.1-.5-.6-.2L7.4 12.6l-4.5-1.4c-1-.3-1-1 .2-1.5L20.6 3c.8-.3 1.5.2 1.3 1.4Z"/></svg>
+            @MsBinaryLily
+          </a>
+          <a class="cbtn" href="mailto:ms.binary.lily@gmail.com" title="Email">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m4 7 8 6 8-6"/></svg>
+            ms.binary.lily@gmail.com
+          </a>
+          <a class="cbtn" href="https://github.com/IonShieldQuad" title="GitHub">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            github.com/IonShieldQuad
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <h2 class="sec-h"><span class="kick">01</span> Профиль</h2>
+      <div class="cols">
+        <p>Backend-разработчик с практическим опытом веб-разработки, автоматизации и работы с ИИ-инструментами. Создаю приложения и связки на базе ИИ-агентов, свободно работаю с кодом, когда ИИ нужен контроль.</p>
+        <p>Очень ценю знания и компетентность и всегда стараюсь знать больше, быть и делать работу лучше — считаю это ценным само по себе, даже без дополнительной награды.</p>
+      </div>
+      <div class="highlight">
+        <p><span class="hud-tag">ЗАДАЧА</span> Хочется продолжить развитие и выйти на сотрудничество — заниматься разработкой реальных оплачиваемых проектов.</p>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <h2 class="sec-h"><span class="kick">02</span> Стек и инструменты</h2>
+      <div class="stack-grid">
+        <div class="sblock">
+          <h3>Языки</h3>
+          <div class="pills"><span>Python</span><span>JavaScript</span><span>Java</span><span>SQL</span><span>PHP</span><span>+ Lua</span></div>
+        </div>
+        <div class="sblock">
+          <h3>Направления</h3>
+          <div class="pills"><span>ML/AI</span><span>Backend</span><span>Frontend</span><span>Автоматизация</span></div>
+        </div>
+        <div class="sblock">
+          <h3>Фреймворки и платформы</h3>
+          <div class="pills"><span>n8n</span><span>FastAPI</span><span>Uvicorn</span><span>SQLite</span><span>NocoDB</span><span>MySQL</span><span>Keras</span><span>Docker</span></div>
+        </div>
+        <div class="sblock">
+          <h3>Человеческие языки</h3>
+          <p class="kv">Русский <span class="mono">· родной</span></p>
+          <p class="kv">Английский <span class="mono">· C1–C2 свободно</span></p>
+        </div>
+      </div>
+      <div class="sblock grow">
+        <h3>ИИ-инструменты кодинга</h3>
+        <div class="pills"><span>Kun</span><span>OpenCode</span><span>Codex</span><span>Orca</span><span>Hermes</span><span>Claude</span><span>ChatGPT</span><span>DeepSeek</span></div>
+      </div>
+      <div class="sblock grow">
+        <h3>Зоны роста</h3>
+        <p>Интересуют два направления: <span class="mono">создание ИИ-агентов и автоматизаций</span> (например через n8n) и <span class="mono">разработка приложений с помощью ИИ-агентов</span>. Поскольку текущий ИИ всё ещё совершает много ошибок, умение разобраться в коде — реальное преимущество.</p>
+      </div>
+    </section>
+
+    <section class="panel reveal">
+      <h2 class="sec-h"><span class="kick">03</span> Образование</h2>
+      <div class="edu">
+         <div class="hex hex-md"><span>Обу</span></div>
+        <div>
+          <h3>Тамбовский Государственный Технический Университет</h3>
+          <p class="kv mono dim">Информатика и Вычислительная Техника — магистр (09.03.01 / 09.04.01)</p>
+          <p class="sub">За годы учёбы разработала много учебных и личных проектов:</p>
+        </div>
+      </div>
+      <ul class="grid-list">
         <li>Веб-сайты</li>
         <li>Приложения на Android</li>
         <li>Нейросеть на JS, написанная с нуля</li>
         <li>Компилятор / транслятор</li>
         <li>Программы для промышленных контроллеров и реле</li>
-        <li>Различные модификации и аддоны для видеоигр</li>
-        <li>Рабочую архитектуру процессора, начиная с NAND</li>
+        <li>Модификации и аддоны для видеоигр</li>
+        <li>Рабочая архитектура процессора, начиная с NAND</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Инструменты и ресурсы</h2>
-      <p class="kv"><b>ИИ-инструменты:</b> ChatGPT, Claude, DeepSeek + Nightcafe, Ollama, OpenClaw, OpenCode, Kimi, Qwen, Kun</p>
-      <p class="kv"><b>IDE / редакторы:</b> VS Code, JetBrains, Sublime / Notepad++</p>
-      <p class="kv"><b>Доп. инструменты:</b> Docker, Git/GitHub, n8n</p>
-      <p class="kv"><b>Устройства:</b> Windows, ноутбук / ПК</p>
+    <section class="panel reveal">
+      <h2 class="sec-h"><span class="kick">04</span> Проекты</h2>
+
+      <article class="proj">
+        <header class="proj-head">
+          <div>
+            <h3>Horizon</h3>
+            <div class="proj-tags">
+              <span class="tag pet">ПЕТ · ДЛЯ СЕБЯ</span>
+               <span class="tag owner">ЕДИНСТВЕННЫЙ РАЗРАБОТЧИК</span>
+              <span class="tag alpha">АЛЬФА</span>
+            </div>
+          </div>
+          <a class="gh-link mono" href="https://github.com/IonShieldQuad/horizon-chamber">//horizon-chamber</a>
+        </header>
+        <div class="proj-body">
+          <div class="sblock"><h3>Стек</h3><div class="pills"><span>Python</span><span>FastAPI</span><span>Uvicorn</span><span>Canvas</span><span>SQLite</span></div></div>
+          <p>Программа для продуктивности, которую разрабатываю для себя. Заметила, что часто отвлекаюсь и работаю медленно — часто из-за негативного эмоционального фона и выгорания. В приложении — канбан-доска, фид новостей, статистика и трекер эмоций. Две ключевые фичи: ИИ-помощник, который следит за моим поведением и выполняет роль «коуча» и поддержки, а также динамический фон и музыка для мотивированного и фокусированного состояния. Пока альфа, но базовый функционал работает.</p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <header class="proj-head">
+          <div>
+            <h3>Rain Maker</h3>
+            <div class="proj-tags">
+              <span class="tag pet">ПЕТ · ДЛЯ СЕБЯ</span>
+              <span class="tag owner">ЕДИНСТВЕННЫЙ РАЗРАБОТЧИК</span>
+            </div>
+          </div>
+          <a class="gh-link mono" href="https://github.com/IonShieldQuad/rain-maker">//rain-maker</a>
+        </header>
+        <div class="proj-body">
+          <div class="sblock"><h3>Стек</h3><div class="pills"><span>Python</span><span>PySide6 / Qt</span><span>NumPy</span><span>PyInstaller</span></div></div>
+          <p>Процедурный генератор шума дождя для Windows: девять спектральных слоёв дождя плюс капли с раздельными регуляторами полос, анимация goal-pursuit авто-дрейфа и пресеты. Поставляется как портативный однофайловый exe.</p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <header class="proj-head">
+          <div>
+            <h3>Telegram Parser / Aggregator</h3>
+            <div class="proj-tags">
+              <span class="tag owner">ЕДИНСТВЕННЫЙ РАЗРАБОТЧИК</span>
+            </div>
+          </div>
+          <span class="gh-link mono">ПРИВАТНЫЙ · ПОДРОБНОСТИ ПО ЗАПРОСУ</span>
+        </header>
+        <div class="proj-body">
+          <div class="sblock"><h3>Стек</h3><div class="pills"><span>Python</span></div></div>
+          <p>ИИ-ассистируемая система поиска лидов на нескольких платформах и подготовки ответов: агрегирует целевые источники, находит перспективные лиды и помогает составлять контекстные ответы. Закрытый код — подробности по запросу.</p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <header class="proj-head">
+          <div>
+            <h3>Evasion Learning</h3>
+            <div class="proj-tags">
+              <span class="tag edu-t">УЧЕБНЫЙ</span>
+               <span class="tag owner">ЕДИНСТВЕННЫЙ РАЗРАБОТЧИК</span>
+            </div>
+          </div>
+          <a class="gh-link mono" href="https://github.com/IonShieldQuad/Evasion-learning">//Evasion-learning</a>
+        </header>
+        <div class="proj-body">
+          <div class="sblock"><h3>Стек</h3><div class="pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+          <p>Учебный проект для понимания того, как на самом деле работает машинное обучение, — реализован чисто на фронтенде. Нейросеть управляет шариком, который уклоняется от падающих блоков. Удалось написать рабочую нейросеть с нуля на JS без каких-либо библиотек. Она наглядно демонстрирует обучение (нейрогенетический алгоритм) и работу.</p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <header class="proj-head">
+          <div>
+            <h3>Lily&rsquo;s Innovations</h3>
+            <div class="proj-tags">
+              <span class="tag pet">ПЕТ · ДЛЯ СЕБЯ</span>
+               <span class="tag owner">ЕДИНСТВЕННЫЙ РАЗРАБОТЧИК</span>
+              <span class="tag live">300+ ПОЛЬЗОВАТЕЛЕЙ</span>
+            </div>
+          </div>
+          <a class="gh-link mono" href="https://github.com/IonShieldQuad/lilys-innovations">//lilys-innovations</a>
+        </header>
+        <div class="proj-body">
+          <div class="sblock"><h3>Стек</h3><div class="pills"><span>Lua</span><span>Hyperspace</span></div></div>
+          <p>Аддон для игры FTL: Multiverse, написанный полностью самостоятельно, — 13 скриптов и более 10 000 строк кода. Проект пользуется популярностью и имеет 300+ пользователей.</p>
+        </div>
+      </article>
     </section>
 
-    <section class="span2">
-      <h2>Опыт и проекты</h2>
+    <section class="panel reveal">
+      <h2 class="sec-h"><span class="kick">05</span> Лог собеседования</h2>
 
-      <div class="proj">
-        <div class="proj-head">
-          <span class="proj-title">Horizon</span>
-          <span class="tag">Пет-проект (для себя)</span>
-          <span class="tag">Единственный разработчик</span>
+      <details class="qa" open>
+        <summary>Как вы используете ИИ в работе?</summary>
+        <div class="qa-body">
+          <p>Работаю с несколькими инструментами агентного кодинга — <span class="mono">Kun</span>, <span class="mono">OpenCode</span>, <span class="mono">Codex</span> и <span class="mono">Orca</span> — для планирования, реализации и проверки. Основной инструмент Kun оптимизирован под DeepSeek: высокий cache hit и низкая стоимость за токены. Какой бы инструмент ни использовался, процесс один:</p>
+          <ol class="steps">
+            <li><span class="mono">01</span> Задание ТЗ.</li>
+            <li><span class="mono">02</span> Анализ проекта.</li>
+            <li><span class="mono">03</span> План реализации (с pre-mortem), корректировка, обсуждение упущенных деталей.</li>
+            <li><span class="mono">04</span> Пошаговое выполнение каждого пункта плана.</li>
+            <li><span class="mono">05</span> Тестирование и проверка работы (вручную).</li>
+          </ol>
         </div>
-        <div class="meta">Стек: Python, FastAPI, Uvicorn, Canvas, SQLite &middot; <a class="link" href="https://github.com/IonShieldQuad/horizon-chamber">github.com/IonShieldQuad/horizon-chamber</a></div>
-        <p>Разрабатываю для себя программу для продуктивности. Заметила, что часто отвлекаюсь и работаю медленно — часто из-за негативного эмоционального фона, выгорания и т.п. Решила создать приложение с канбан-доской, фидом новостей, статистикой и трекером эмоций. 2 ключевые фичи — ИИ-помощник, который следит за поведением и выполняет роль «коуча» и поддержки, плюс динамический фон и музыка для поддержания мотивированного и фокусированного состояния. Приложение пока в альфа-версии, но базовый функционал присутствует.</p>
-      </div>
+      </details>
 
-      <div class="proj">
-        <div class="proj-head">
-          <span class="proj-title">Evasion Learning</span>
-          <span class="tag">Учебный</span>
-          <span class="tag">Единственный разработчик</span>
+      <details class="qa">
+        <summary>Сложная проблема, которую вы решили?</summary>
+        <div class="qa-body">
+          <p>Разрабатывала алгоритм оптимизации, который брал данные через API. Чтобы не вызывать API повторно лишний раз, кешировала результаты в hash-таблице — но нативный способ сравнения двух объектов был сломан и всегда возвращал <span class="mono">false</span>, поэтому кеширование молча не работало. Обнаружила это через профайлер и написала собственную функцию хеширования / сравнения для этих объектов.</p>
         </div>
-        <div class="meta">Стек: Web (HTML/CSS/JavaScript) &middot; <a class="link" href="https://github.com/IonShieldQuad/Evasion-learning">github.com/IonShieldQuad/Evasion-learning</a></div>
-        <p>Учебный проект для понимания работы машинного обучения, реализован чисто на фронтенде. Нейросеть управляет шариком, который уклоняется от падающих блоков. Удалось сделать рабочую нейросеть с нуля на JS без каких-либо библиотек. Нейросеть успешно демонстрирует своё обучение (нейрогенетический алгоритм) и работу.</p>
-      </div>
+      </details>
 
-      <div class="proj">
-        <div class="proj-head">
-          <span class="proj-title">Lily&rsquo;s Innovations</span>
-          <span class="tag">Пет-проект (для себя)</span>
-          <span class="tag">Единственный разработчик</span>
+      <details class="qa">
+        <summary>Уточняющие вопросы на собеседовании?</summary>
+        <div class="qa-body">
+          <p>Спросила бы про сам проект, языки и стек, конкретное ТЗ, что входит в мои обязанности, а что нет, и дедлайн. Затем составила бы примерный план реализации с промежуточными дедлайнами / точками сверки.</p>
         </div>
-        <div class="meta">Стек: Lua, Hyperspace &middot; <a class="link" href="https://github.com/IonShieldQuad/lilys-innovations">github.com/IonShieldQuad/lilys-innovations</a></div>
-        <p>Самостоятельно написала аддон для игры FTL: Multiverse. В него входят 13 скриптов и более 10 000 строк кода. Проект пользуется популярностью и имеет 300+ пользователей.</p>
-      </div>
+      </details>
+
+      <details class="qa">
+        <summary>Что для вас «сделано хорошо»?</summary>
+        <div class="qa-body">
+          <p>Код — работает, протестирован, достаточно оптимизирован (по скорости / памяти) и понятен другим членам команды.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Как справляетесь с неудачами?</summary>
+        <div class="qa-body">
+          <p>Во время обучения возникли проблемы со здоровьем, и я поняла, что не смогла бы вытянуть проект целиком. Написала объяснение почему и снизила цель — реализовала часть поменьше, а не весь проект.</p>
+        </div>
+      </details>
     </section>
 
-    <section class="span2">
-      <h2>Вопросы для созвона</h2>
-      <h3>Как использую ИИ</h3>
-      <p>Использую ИИ-инструмент агентного кодинга Kun. Он оптимизирован под DeepSeek, что даёт высокий cache hit и низкую стоимость за токены. Процесс работы:</p>
-      <ol style="padding-left:20px">
-        <li>Задание ТЗ.</li>
-        <li>Анализ проекта.</li>
-        <li>Составление плана реализации (с pre-mortem), корректировка, обсуждение упущенных деталей.</li>
-        <li>Пошаговое выполнение каждого пункта плана разработки.</li>
-        <li>Тестирование и проверка работы (вручную).</li>
-      </ol>
-
-      <h3>Сложная проблема</h3>
-      <p>Разрабатывала алгоритм оптимизации, который брал данные через API. Чтобы не вызывать API повторно лишний раз, кешировала результаты в hash-таблице. Однако нативный способ сравнения двух объектов был сломан — всегда выдавал false, из-за чего кеширование не работало. Обнаружила это, подключив профайлер и написав собственную функцию хеширования / сравнения для этих объектов.</p>
-
-      <h3>Уточняющие вопросы</h3>
-      <p>Спросила бы про проект, языки и стек, конкретное ТЗ, что входит в обязанности, а что нет, и дедлайн. После чего составила бы примерный план реализации с промежуточными дедлайнами / точками сверки.</p>
-
-      <h3>Критерий «сделано хорошо»</h3>
-      <p>Код — работает, протестирован, достаточно оптимизирован (по скорости / памяти) и наглядно понятен другим членам команды.</p>
-
-      <h3>Как справляется с ошибками</h3>
-      <p>Во время обучения возникали проблемы со здоровьем, и я поняла, что не смогла бы вытянуть проект целиком. Написала объяснение почему и снизила цель — реализовала часть поменьше, а не весь проект.</p>
-    </section>
+    <footer class="foot mono">
+      <span>ЛИЛИЯ ГРИНИНА · РЕЗЮМЕ</span>
+      <span>// ionshieldquad.github.io/resume</span>
+      <span>ХОСТИНГ — GITHUB PAGES</span>
+    </footer>
   </div>
 
-  <footer>Резюме опубликовано на GitHub Pages</footer>
-</div>
+</main>
+
+<script src="assets/main.js"></script>
 </body>
 </html>

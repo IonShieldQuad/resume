@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <g stroke="rgba(140,175,240,0.055)" stroke-width="1" fill="none">
+    <path d="M0 14 14 0M-7 7 7 -7M7 21 21 7"/>
+    <path d="M0 0 14 14M-7 -7 7 7M7 7 21 21" opacity="0.7"/>
+  </g>
+</svg>
