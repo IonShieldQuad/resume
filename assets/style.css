@@ -502,6 +502,7 @@ main {
 .tag.pet  { color: var(--c-cyan);  border-color: rgba(55, 215, 255, .4); }
 .tag.edu-t{ color: var(--c-blue);  border-color: rgba(74, 157, 255, .4); }
 .tag.owner { color: var(--c-vio); border-color: rgba(139, 108, 255, .4); }
+.tag.client { color: var(--c-blue); border-color: rgba(74, 157, 255, .45); }
 .tag.alpha{ color: var(--c-amber); border-color: rgba(255, 196, 107, .4); }
 .tag.live { color: var(--c-mint);  border-color: rgba(67, 255, 180, .4); }
 
